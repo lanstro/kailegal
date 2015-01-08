@@ -14,6 +14,8 @@
 		<link rel="canonical" href="http://kailegal.com.au/contact.html"/>
 		<meta name="description" content="Contact us at Suite 6, Level 9, 350 Collins Street Melbourne, +61390417733 or inquiry@kailegal.com.au.">
 		<meta name="keywords" content="Melbourne, online, contact">
+		<link rel="alternate" hreflang="en" href="http://kailegal.com.au/contact.html" />
+		<link rel="alternate" hreflang="zh" href="http://kailegal.com.au/cn/contact.html" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -27,6 +29,7 @@
 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 			
 			ga('create', 'UA-57749247-1', 'auto');
+			ga('require', 'displayfeatures');
 			ga('send', 'pageview');
 			
 		</script>
@@ -77,8 +80,29 @@
 				<div class="col-md-6 col-sm-12">
 					<h3>Prefer the phone or getting us online?</h3>
 					<p>
-						Alternatively, you can call us on <a class="anchor" href="tel:+61390417733">+61 3 9041 7733</a>, or message us in any of the other ways listed in the footer below.  We're flexible!
+						Alternatively, you can call us on <a class="anchor" href="tel:+61390417733">+61 3 9041 7733</a>, or leave us a message with our contact form:
 					</p>
+					<form name="contactform" method="post" action="send_form_email.php">
+						<div class="form-group">
+							<label for="first_name">Name*</label>
+							<input  type="text" name="name" maxlength="50" class="form-control" placeholder="Enter name">
+						</div>
+						<div class="form-group">
+							<label for="email">Email Address*</label>
+							<input  type="email" name="email" maxlength="80" class="form-control" placeholder="Enter email">
+						</div>
+						<div class="form-group">
+							<label for="telephone">Telephone Number</label>
+							<input type="text" name="telephone" size="30" class="form-control" placeholder="Optional: enter phone number">
+						</div>
+						<div class="form-group">
+							<label for="comments">Comments (max 1000 characters)</label>
+							<textarea  name="comments" maxlength="1000" rows="6" class="form-control" placeholder="Comments here">
+							</textarea>
+						</div>
+						<input type="submit" value="Submit" class="btn btn-default"></input>
+					</form>	
+					
 				</div>
 			</div>
 		</div>
@@ -105,6 +129,7 @@
 								</ul>
 								<h4><a href="http://kailegal.com.au/contact.html">About us</a></h4>
 								<h4><a href="#" class="active">Contact us</a></h4>
+								<h4><a href="http://kailegal.com.au/privacy.html">Our privacy policy</a></h4>
 							</div>
 						</div>
 					</div>

@@ -453,6 +453,34 @@ hr {
 		background-size: cover;
 	}
 }
+
+@media(max-width: 1200px){
+	#privacy-heading {
+		background: url(../assets/pixabay/services_pricing_small.jpg) no-repeat;
+		background-size: cover;
+	}
+}
+@media(min-width: 1201px){
+	#privacy-heading {
+		background: url(../assets/pixabay/services_pricing.jpg) no-repeat;
+		background-size: cover;
+	}
+}
+
+@media(max-width: 1200px){
+	#publications-heading {
+		background: url(../assets/pixabay/services_pricing_small.jpg) no-repeat;
+		background-size: cover;
+	}
+}
+@media(min-width: 1201px){
+	#publications-heading {
+		background: url(../assets/pixabay/services_pricing.jpg) no-repeat;
+		background-size: cover;
+	}
+}
+
+
 .heading-caption {
 	color: rgb(64, 12, 9);
 	text-shadow: 2px 2px 2px white;
