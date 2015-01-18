@@ -164,6 +164,12 @@ body {
 	z-index: 5;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.carousel-control .fa-chevron-left, .carousel-control .fa-chevron-right {
+		position: relative;
+	}
+}
+
 .carousel-control .glyphicon-chevron-left {
 	top:80%;
 }
@@ -290,6 +296,16 @@ h1 {
 	padding: 1% 5%;
 	margin-bottom: 5%;
 	width: 100%;
+}
+
+.values-box:hover {
+	background-color: rgb(245, 245, 245);
+	
+}
+
+.values-box-link:hover{
+	text-decoration: none;
+	color: rgb(64, 12, 9);
 }
 
 .values-heading {
@@ -469,13 +485,13 @@ hr {
 
 @media(max-width: 1200px){
 	#publications-heading {
-		background: url(../assets/pixabay/services_pricing_small.jpg) no-repeat;
+		background: url(../assets/pixabay/publications_small.jpg) no-repeat;
 		background-size: cover;
 	}
 }
 @media(min-width: 1201px){
 	#publications-heading {
-		background: url(../assets/pixabay/services_pricing.jpg) no-repeat;
+		background: url(../assets/pixabay/publications.jpg) no-repeat;
 		background-size: cover;
 	}
 }
@@ -547,6 +563,10 @@ h2 {
 	color: darkGrey;
 }
 
+.lead a{
+	color: darkGrey;
+}
+
 thead {
 	font-weight: bold;
 }
@@ -606,4 +626,13 @@ thead {
 
 .weibo-icon-chinese span {
 	margin-top:2px;
+}
+
+.breadcrumb > li + li:before {
+	content: "> ";
+	color: rgb(191, 37, 28);
+}
+
+.breadcrumb > .active {
+  color: rgb(191, 37, 28);
 }
