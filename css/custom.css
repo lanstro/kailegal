@@ -346,6 +346,7 @@ hr {
 .photo {
 	width: 100%;
 	max-width: 350px;
+	margin-bottom:20px;
 }
 
 .contact-box {
@@ -548,6 +549,7 @@ hr {
 .sidebar-col {
 	padding-left: 0px;
 	padding-right: 0px;
+	margin-bottom: 20px;
 	
 }
 
@@ -586,6 +588,7 @@ thead {
 
 .popover {
 	max-width: 80%;
+	font-family: Arial, Helvetica, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif;
 }
 
 .anchor {
@@ -635,4 +638,50 @@ thead {
 
 .breadcrumb > .active {
   color: rgb(191, 37, 28);
+}
+
+.breadcrumb {
+	background-color: white;
+}
+
+.publication-details {
+	color: darkGrey;
+	font-size: 0.8em;
+	font-style: italic;
+}
+
+.publications-details-link {
+	color: darkGrey;
+}
+
+h4 {
+	color: rgb(191, 37, 28);
+}
+
+.well {
+	background-color: #eee;
+}
+
+.publication-back-top {
+	text-align: right;
+	margin-bottom:10px;
+}
+
+ol.publication-list {
+	font-size:18px; 
+	color:rgb(191, 37, 28);
+}
+
+.publication-list li p {
+	font-size: 17px;
+	color: rgb(64, 12, 9);
+	padding-left: 10px;
+}
+
+.publication-list li h4 {
+	padding-left: 10px;
+}
+
+.publication-list li h4 a {
+	color:rgb(191, 37, 28);
 }

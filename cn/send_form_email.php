@@ -3,47 +3,46 @@
 mb_internal_encoding("UTF-8");
 header('Content-Type: text/html; charset=utf-8');
 
- 
 if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
  
     $email_to = "inquiry@kailegal.com.au";
  
-    $email_subject = "Online contact form inquiry";
+    $email_subject = "Online Chinese inquiry";
  
     function died($error) {
 			// your error code can go here
-			echo "We are very sorry, but there were error(s) found with the form you submitted. ";
-			echo "These errors appear below.<br /><br />";
+			echo "对不起，您提交的表格有错误。";
+			echo "以下的这些是错误。<br /><br />";
 			echo $error."<br /><br />";
-			echo "Please go back and fix these errors.<br /><br />";
+			echo "请修改这些错误。<br /><br />";
 			die();
     }
  
     // validation expected data exists
  
-    if(!isset($_POST['name']) ||
+		if(!isset($_POST['name']) ||
+		
+		!isset($_POST['email']) ||
+		
+		!isset($_POST['telephone']) ||
+		
+		!isset($_POST['comments'])) {
  
-        !isset($_POST['email']) ||
- 
-        !isset($_POST['telephone']) ||
- 
-        !isset($_POST['comments'])) {
- 
-        died('We are sorry, but there appears to be a problem with the form you submitted.');      
+        died('对不起，您提交的表格有错误。');      
  
     }
  
      
  
-    $name = $_POST['name']; // required
- 
-    $email_from = $_POST['email']; // required
- 
-    $telephone = $_POST['telephone']; // not required
- 
-    $comments = $_POST['comments']; // required
+	$name = $_POST['name']; // required
+	
+	$email_from = $_POST['email']; // required
+	
+	$telephone = $_POST['telephone']; // not required
+	
+	$comments = $_POST['comments']; // required
  
      
  
@@ -52,17 +51,17 @@ if(isset($_POST['email'])) {
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
  
   if(!preg_match($email_exp,$email_from)) {
-    $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+    $error_message .= '您输入的电子邮箱不正确。<br />';
   }
  
     $string_exp = "/^[A-Za-z .'-]+$/";
  
   if(iconv_strlen($name) < 2) {
-    $error_message .= 'The name you entered was too short.<br />';
+    $error_message .= '您输入的名字太短。<br />';
   }
  
   if(iconv_strlen($comments) < 2) {
-    $error_message .= 'The comment you entered was too short.<br />';
+    $error_message .= '你输入的资讯内容太短。<br />';
   }
  
   if(iconv_strlen($error_message) > 0) {
@@ -99,10 +98,10 @@ $headers = 'From: '.$email_from."\r\n".
  
  
 <!-- include your own success html here -->
- 
-Thank you for contacting us. We will be in touch with you very soon.
 
-Click <a href="http://kailegal.com.au">here</a> to return to our home page.
+谢谢您的资讯。我们会尽快跟您联系。
+
+请点击 <a href="http://kailegal.com.au">这里</a> 回首页。
  
 <?php
  

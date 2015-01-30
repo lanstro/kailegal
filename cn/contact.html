@@ -83,6 +83,26 @@
 					<p>
 						您可以通过电话，电子邮件或以下的任何方式联系我们。 
 					</p>
+					<form name="contactform" method="post" action="send_form_email.php" accept-charset="utf-8">
+						<div class="form-group">
+							<label for="first_name">姓名*</label>
+							<input  type="text" name="name" maxlength="50" class="form-control" placeholder="请输入姓名">
+						</div>
+						<div class="form-group">
+							<label for="email">电子邮箱*</label>
+							<input  type="email" name="email" maxlength="80" class="form-control" placeholder="请输入电子邮箱">
+						</div>
+						<div class="form-group">
+							<label for="telephone">电话号码</label>
+							<input type="text" name="telephone" size="30" class="form-control" placeholder="请输入电话号码">
+						</div>
+						<div class="form-group">
+							<label for="comments">资讯内容 (就多500字)</label>
+							<textarea  name="comments" maxlength="1000" rows="6" class="form-control" placeholder="请输入资讯内容">
+							</textarea>
+						</div>
+						<input type="submit" value="提交" class="btn btn-default"></input>
+					</form>	
 				</div>
 			</div>
 		</div>

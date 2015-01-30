@@ -13,7 +13,7 @@
 		<link href="css/bootstrap-social.css" rel="stylesheet">
 		<link rel="canonical" href="http://kailegal.com.au/about.html"/>
 		<meta name="description" content="Lucy Dong is a former State Revenue Office senior compliance officer, a Chartered Accountant and property developer. Kai Fu is a former Allens senior associate.">
-		<meta name="keywords" content="Lucy Dong, former tax , Kai Fu, experienced competition lawyer">
+		<meta name="keywords" content="Lucy Dong, tax and property lawyer, Kai Fu, competition lawyer">
 		<link rel="alternate" hreflang="en" href="http://kailegal.com.au/about.html" />
 		<link rel="alternate" hreflang="zh" href="http://kailegal.com.au/cn/about.html" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -59,6 +59,7 @@
 					<ul class="nav links navbar-nav pull-right">
 						<li><a href="http://kailegal.com.au">Home</a></li>
 						<li><a href="http://kailegal.com.au/services.html">Our services & pricing</a></li>
+						<li><a href="http://kailegal.com.au/publications.html">Publications</a></li>
 						<li><a href="http://kailegal.com.au/about.html" class="active">About us</a></li>
 						<li><a href="http://kailegal.com.au/contact.html">Contact us</a></li>
 					</ul>
@@ -166,6 +167,7 @@
 									<li><a href="http://kailegal.com.au/services.html#other">Other services</a></li>
 									<li><a href="http://kailegal.com.au/services.html#agreement">Our cost agreement</a></li>
 								</ul>
+								<h4><a href="http://kailegal.com.au/publications.html">Publications</a></h4>
 								<h4><a href="#" class="active">About us</a></h4>
 								<h4><a href="http://kailegal.com.au/contact.html">Contact us</a></h4>
 								<h4><a href="http://kailegal.com.au/privacy.html">Our privacy policy</a></h4>
@@ -260,7 +262,7 @@
 								return (this.top = parseInt($('.navbar').outerHeight(true)) + parseInt($('#about-heading').outerHeight(true)));
 							},
 							bottom: function () {
-								return (this.bottom = $('.footer').outerHeight(true));
+								return ((this.bottom = $('.footer').outerHeight(true))+20);
 							}
 						}
 					})
