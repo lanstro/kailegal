@@ -583,7 +583,6 @@ thead {
 
 .anchor:hover {
 	color:rgb(64, 12, 9);
-	
 }
 
 .popover {
@@ -594,6 +593,7 @@ thead {
 .anchor {
 	text-decoration: underline;
 	color: rgb(191, 37, 28);
+	cursor: pointer;
 }
 
 .contacts-table tr>td:first-child{
@@ -685,3 +685,13 @@ ol.publication-list {
 .publication-list li h4 a {
 	color:rgb(191, 37, 28);
 }
+
+.costs-explanation {
+	color: rgb(191, 37, 28);
+	cursor: pointer;
+}
+
+.costs-explanation:hover {
+	color: rgb(64, 12, 9);
+}
+
